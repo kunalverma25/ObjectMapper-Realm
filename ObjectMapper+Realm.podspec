@@ -13,11 +13,11 @@ Pod::Spec.new do |s|
 
   s.requires_arc = "true"
 
-  s.dependency "ObjectMapper"
-  s.dependency "RealmSwift"
+  s.dependency "ObjectMapper", '~> 1.5.0'
+  s.dependency "RealmSwift", '~> 2.3.0'
 
   s.pod_target_xcconfig = {
-    'SWIFT_VERSION' => '3.0',
+    'SWIFT_VERSION' => '2.3',
   }
   s.source_files = "ObjectMapper+Realm/*.swift"
 end
